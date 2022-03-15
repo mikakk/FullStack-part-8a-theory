@@ -5,7 +5,28 @@ Linkki kurssin sivulle [GraphQL-palvelin](https://fullstackopen.com/osa8/graph_q
 Käynnistäminen `node index.js`  
 Avaa [sandbox](https://studio.apollographql.com/sandbox/explorer)
 
-Kysely:
+Git lisääminen:  
+
+```Bash
+git add .; git tag -a "8.2" -m "8.2"; git commit -am "8.2"; git status; git tag -l
+```
+
+Kysely kaikki henkilöt:
+
+```GraphQL
+query AllPersons {
+  allPersons {
+    name
+    phone
+    address {
+      street
+      city
+    }
+  }
+}
+```
+
+Kysely yksi henkiö:
 
 ```GraphQL
 query {
@@ -19,7 +40,7 @@ query {
 }
 ```
 
-Lisääminen:
+Henkilön lisääminen:
 
 ```GraphQL
 mutation {
@@ -30,6 +51,26 @@ mutation {
       street
       city
     }
+  }
+}
+```
+
+Kysely henkilöistä joilla on puhelinnumero:
+
+```GraphQL
+query {
+allPersons(phone: YES) {
+    name
+  }
+}
+```
+
+Puhelinnumeron muuttaminen:
+
+```GraphQL
+mutation {
+  editNumber(name: "Matti Luukkainen", phone: "040-444") {
+    phone
   }
 }
 ```

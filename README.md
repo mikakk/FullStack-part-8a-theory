@@ -1,4 +1,4 @@
-# Full Stack kurssi osa 8 teoria
+# Full Stack kurssi osa 8a teoria
 
 Linkki kurssin sivulle [GraphQL-palvelin](https://fullstackopen.com/osa8/graph_ql_palvelin).
 
@@ -10,10 +10,18 @@ npm install apollo-server graphql
 Käynnistäminen `node index.js`  
 Avaa [sandbox](https://studio.apollographql.com/sandbox/explorer)
 
-Git lisääminen:  
+Lisääminen Git:
 
 ```sh
-tag="8.1.1"; git add .; git commit -am $tag; git tag -a $tag -m $tag; git status; git tag -l
+tag="8a.teoria"; git add .; git commit -am $tag; git tag -a $tag -m $tag; git status; git tag -l
+```
+
+Lisääminen GitHubiin:
+
+```sh
+git remote add origin https://github.com/mikakk/FullStack-part-8a-theory.git
+git branch -M main
+git push -u origin main
 ```
 
 Kysely kaikki henkilöt:

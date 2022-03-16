@@ -1,14 +1,19 @@
-# Full Stack kurssi osa 8
+# Full Stack kurssi osa 8 teoria
 
 Linkki kurssin sivulle [GraphQL-palvelin](https://fullstackopen.com/osa8/graph_ql_palvelin).
+
+```sh
+npm init
+npm install apollo-server graphql
+```
 
 Käynnistäminen `node index.js`  
 Avaa [sandbox](https://studio.apollographql.com/sandbox/explorer)
 
 Git lisääminen:  
 
-```Bash
-git add .; git tag -a "8.2" -m "8.2"; git commit -am "8.2"; git status; git tag -l
+```sh
+tag="8.1.1"; git add .; git commit -am $tag; git tag -a $tag -m $tag; git status; git tag -l
 ```
 
 Kysely kaikki henkilöt:

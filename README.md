@@ -13,7 +13,7 @@ Avaa [sandbox](https://studio.apollographql.com/sandbox/explorer)
 Lisääminen Git:
 
 ```sh
-tag="8a.teoria"; git add .; git commit -am $tag; git tag -a $tag -m $tag; git status; git tag -l
+tag="8a.teoria"; git add .; git commit -am $tag; git tag -a $tag -m $tag; git push; git status; git tag -l; 
 ```
 
 Lisääminen GitHubiin:
